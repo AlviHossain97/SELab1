@@ -2,14 +2,69 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Heading Levels</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SE Lab | Features</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7ff;
+            color: #14213d;
+        }
+        header {
+            background: #14213d;
+            color: #fff;
+            padding: 1.2rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 1rem;
+            font-weight: 600;
+        }
+        main {
+            max-width: 980px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .panel {
+            background: #fff;
+            border-radius: 12px;
+            padding: 1.4rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 10px 30px rgba(20, 33, 61, 0.08);
+        }
+        ul { margin: 0.6rem 0 0; }
+    </style>
 </head>
 <body>
-    <h1>Main Heading (Level 1)</h1>
-    <p>This is the main content of the page.</p>
-    <h2>Subheading (Level 2)</h2>
-    <p>Additional text for the subheading.</p>
-    <h3>Sub-subheading (Level 3)</h3>
-    <p>More text for the sub-subheading.</p>
+    <header>
+        <strong>SE Lab Revamp</strong>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="hello.html">Features</a>
+            <a href="Lab1.html">About</a>
+        </nav>
+    </header>
+    <main>
+        <section class="panel">
+            <h1>Application Features</h1>
+            <p>The app now has a cleaner structure and user-focused content experience.</p>
+            <ul>
+                <li>Responsive layout for desktop and mobile screens</li>
+                <li>Consistent page styling and color system</li>
+                <li>Clear top-level navigation across all pages</li>
+            </ul>
+        </section>
+        <section class="panel">
+            <h2>Next Navigation Steps</h2>
+            <p>Continue exploring to understand the full page structure and content organization.</p>
+            <p><a href="Lab1.html">View the About page</a></p>
+        </section>
+    </main>
 </body>
 </html>

@@ -2,9 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My First Webpage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SE Lab | About</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7ff;
+            color: #14213d;
+        }
+        header {
+            background: #14213d;
+            color: #fff;
+            padding: 1.2rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 1rem;
+            font-weight: 600;
+        }
+        main {
+            max-width: 980px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .section {
+            background: #fff;
+            border-radius: 12px;
+            padding: 1.4rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 10px 30px rgba(20, 33, 61, 0.08);
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Webpage</h1>
+    <header>
+        <strong>SE Lab Revamp</strong>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="hello.html">Features</a>
+            <a href="Lab1.html">About</a>
+        </nav>
+    </header>
+    <main>
+        <section class="section">
+            <h1>About This Application</h1>
+            <p>This page summarizes the revamped structure, content hierarchy, and consistent design language now used throughout the app.</p>
+        </section>
+        <section class="section">
+            <h2>What Changed</h2>
+            <p>The previous isolated demo pages have been transformed into a connected, readable experience with modern spacing, cards, and simple branding.</p>
+        </section>
+        <section class="section">
+            <h3>Where to Go Next</h3>
+            <p>Return to the <a href="index.html">home page</a> or review detailed highlights on the <a href="hello.html">features page</a>.</p>
+        </section>
+    </main>
 </body>
 </html>

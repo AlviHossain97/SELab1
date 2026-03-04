@@ -1,13 +1,82 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hyperlinks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SE Lab | Home</title>
+    <style>
+        :root { color-scheme: light; }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7ff;
+            color: #14213d;
+        }
+        header {
+            background: #14213d;
+            color: #fff;
+            padding: 1.2rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 1rem;
+            font-weight: 600;
+        }
+        main {
+            max-width: 980px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .hero, .card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 1.4rem;
+            box-shadow: 0 10px 30px rgba(20, 33, 61, 0.08);
+        }
+        .grid {
+            margin-top: 1rem;
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        }
+        .card a {
+            color: #0b6cff;
+            text-decoration: none;
+            font-weight: 700;
+        }
+    </style>
 </head>
 <body>
-    <h1>Visit Other Pages</h1>
-    <ul>
-        <li><a href="hello.html">Page 1</a></li>
-        <li><a href="Lab1.html">Page 2</a></li>
-    </ul>
+    <header>
+        <strong>SE Lab Revamp</strong>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="hello.html">Features</a>
+            <a href="Lab1.html">About</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Welcome to the Revamped Application</h1>
+            <p>This experience is now organized as a modern, multi-page static app with consistent styling, navigation, and content flow.</p>
+        </section>
+        <section class="grid">
+            <article class="card">
+                <h2>Explore Features</h2>
+                <p>Review key highlights and what this app now offers in a cleaner interface.</p>
+                <a href="hello.html">Go to Features</a>
+            </article>
+            <article class="card">
+                <h2>Learn the Structure</h2>
+                <p>See the organized section hierarchy and readable layout choices.</p>
+                <a href="Lab1.html">Go to About</a>
+            </article>
+        </section>
+    </main>
 </body>
 </html>
